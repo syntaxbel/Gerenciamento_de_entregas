@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Fundo da página com degradê */
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #d8a7c9, #2c2a4a);
+}
+
+.button-container {
+    display: block;
+    background-color: rgba(249, 249, 249, 0.516); 
+    border-radius: 110px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(46, 46, 46, 0.622);
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.buttons {
+    padding: 60px;
+    flex: 2;
+    color: #4a1d4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bnt {
+    background: linear-gradient(to right, #000000b8, #000000df);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.buttons h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000c6;
+}
+
+/* Define o tamanho da moldura */
+.perfil-image {
+  width: 150px; 
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Faz a imagem se ajustar à moldura */
+.perfil-image img {
+  width: 100%; 
+  height: auto;
+  display: block; /* Remove um espacinho vazio que imagens costumam ter embaixo */
+}
