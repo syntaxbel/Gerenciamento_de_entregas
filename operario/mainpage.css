@@ -1,0 +1,152 @@
+/* Configuração referente a tela em geral */
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(to right, #d8a7c9, #3a385b16);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container principal para Sidebar + Conteúdo */
+.app-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e5f2;
+    z-index: 1000;
+}
+
+.navbar-title {
+    margin-bottom: 40px;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Sidebar Corrigida */
+.sidebar {
+    width: 90px; /* Ajustado para ícones */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 290px;
+    padding-top: 30px;
+    border-right: 1px solid #e0e5f2;
+    
+}
+
+/* Botões de Ícone */
+.btn-icone {
+    background: transparent; 
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icone:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Ajuste de tamanhos dos ícones para consistência */
+.icon-adicionar, .icon-editar, .icon-assistencia {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.dashboard-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(112, 144, 176, 0.15); /* Sombra mais suave */
+}
+
+/* Tabela e Status */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th { text-align: left; color: #A3AED0; font-size: 14px; padding: 15px; border-bottom: 1px solid #e0e5f2; text-transform: uppercase; }
+td { padding: 15px; color: #2B3674; font-weight: 600; border-bottom: 1px solid #f4f7fe; }
+
+.status-badge { 
+    padding: 6px 14px; 
+    border-radius: 12px; 
+    font-size: 12px; 
+    font-weight: 700; 
+    display: inline-block;
+}
+
+/* Cores de Status Corrigidas (Melhor Contraste) */
+.status-embalado { background-color: #E6EDFF; color: #422AFB; }
+.status-transportando { background-color: #FFF9EC; color: #FFB547; }
+.status-entregado { background-color: #E6FDF2; color: #01B574; } /* Verde no fundo verde */
+.status-interrompido { background-color: #FFEE EE; color: #EE5D50; }
+
+/* Modais */
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.btn-confirm { 
+    background: #6a3a7a; 
+    color: white; /* Corrigido de Black para White */
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 12px; 
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+#contador-total {
+    color: #422AFB; /* Roxo para destacar o número */
+    margin-left: 5px;
+}
+
+.total-entregas-box {
+    background-color: #f4f7fe;
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: #2B3674;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #e0e5f2;
+}
