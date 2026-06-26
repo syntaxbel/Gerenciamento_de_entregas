@@ -25,6 +25,6 @@ O projeto foi construído dividindo as responsabilidades entre uma interface ric
 - **JavaScript (ES6):** Manipulação dinâmica do DOM, interatividade do dashboard e comportamento dos componentes da página.
 
 ### Back-End
-- **PHP:** Lógica de autenticação da tela de login, validação de credenciais e gestão de sessões (`session_start`).
+- **PHP:** Lógica de autenticação da tela de login, validação de credenciais.
 
 ---
